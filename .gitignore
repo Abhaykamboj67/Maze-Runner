@@ -1,0 +1,24 @@
+# Executables
+*.exe
+*.out
+
+# Object & intermediate files
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+
+# Build folders
+build/
+bin/
+.cache/
+cmake-build-*/
+
+# IDE & OS files
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db

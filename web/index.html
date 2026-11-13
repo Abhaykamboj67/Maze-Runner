@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Runner</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>🏃 Maze Runner</h1>
+            <p class="subtitle">Navigate the maze or watch AI solve it</p>
+        </header>
+
+        <div class="toolbar">
+            <button id="btn-new" title="Generate New Maze">
+                <span class="icon">🔄</span> New Maze
+            </button>
+            <button id="btn-bfs" title="Solve with Breadth-First Search">
+                <span class="icon">🔍</span> Solve BFS
+            </button>
+            <button id="btn-dfs" title="Solve with Depth-First Search">
+                <span class="icon">🧭</span> Solve DFS
+            </button>
+            <button id="btn-reset" title="Reset Player to Start">
+                <span class="icon">↩️</span> Reset
+            </button>
+        </div>
+
+        <div class="status-bar">
+            <div id="status" class="status-msg">Use W/A/S/D or Arrow Keys to move. Reach the 🏁 to win!</div>
+            <div id="move-count" class="move-counter">Moves: 0</div>
+        </div>
+
+        <div class="maze-wrapper">
+            <canvas id="maze-canvas"></canvas>
+        </div>
+
+        <div class="legend">
+            <span class="legend-item"><span class="legend-color" style="background:#4CAF50"></span> Start</span>
+            <span class="legend-item"><span class="legend-color" style="background:#f44336"></span> Finish</span>
+            <span class="legend-item"><span class="legend-color" style="background:#2196F3"></span> Player</span>
+            <span class="legend-item"><span class="legend-color" style="background:#64B5F6"></span> Trail</span>
+            <span class="legend-item"><span class="legend-color" style="background:#FF9800"></span> Solution</span>
+            <span class="legend-item"><span class="legend-color" style="background:#333"></span> Wall</span>
+            <span class="legend-item"><span class="legend-color" style="background:#e8e8e8"></span> Path</span>
+        </div>
+
+        <footer>
+            <p>Maze Runner &mdash; C++ Backend + Web Frontend | Use keyboard to navigate</p>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
